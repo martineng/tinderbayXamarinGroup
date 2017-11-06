@@ -7,9 +7,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/vtxtLogin"
-        android:text="Login"
-        android:layout_gravity="top"
+        android:id="@+id/vtxtSignup"
+        android:text="Signup"
         android:gravity="center" />
     <EditText
         android:layout_width="match_parent"
@@ -23,11 +22,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnLogin"
-        android:text="Login" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSignup"
-        android:text="Signup" />
+        android:id="@+id/btnConfirm"
+        android:text="Confirm" />
 </LinearLayout>
