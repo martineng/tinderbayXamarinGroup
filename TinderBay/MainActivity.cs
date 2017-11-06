@@ -2,8 +2,6 @@
 using Android.Widget;
 using Android.OS;
 
-
-
 namespace TinderBay
 {
     [Activity(Label = "TinderBay", MainLauncher = true, Icon = "@mipmap/icon")]
