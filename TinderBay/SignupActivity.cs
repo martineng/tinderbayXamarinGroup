@@ -14,6 +14,7 @@ namespace TinderBay
         protected Button btnConfirm;
         protected EditText etxtUsername;
         protected EditText etxtPassword;
+        protected EditText etxtConfirmPassword;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -24,27 +25,33 @@ namespace TinderBay
 
             etxtUsername = FindViewById<EditText>(Resource.Id.etxtUsername);
             etxtPassword = FindViewById<EditText>(Resource.Id.etxtPassword);
+            etxtConfirmPassword = FindViewById<EditText>(Resource.Id.etxtConfirmPassword);
 
             btnConfirm.Click += BtnConfirm_Click;
         }
 
         protected void BtnConfirm_Click(object sender, EventArgs e)
         {
-            string text = BCrypt.Net.BCrypt.HashString(etxtPassword.Text);
-
             try
             {
-                string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db");
-                var db = new SQLiteConnection(dpPath);
+                if (etxtPassword.Text == etxtConfirmPassword.Text)
+                {
+                    string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db");
+                    var db = new SQLiteConnection(dpPath);
 
-                db.CreateTable<LoginTable>();
-                LoginTable tbl = new LoginTable();
+                    db.CreateTable<LoginTable>();
+                    LoginTable tbl = new LoginTable();
 
-                tbl.username = etxtUsername.Text;
-                tbl.passwordHash = text;
+                    tbl.username = etxtUsername.Text;
+                    tbl.passwordHash = BCrypt.Net.BCrypt.HashString(etxtPassword.Text);
 
-                db.Insert(tbl);
-                Toast.MakeText(this, "User Created Successfully", ToastLength.Short).Show();
+                    db.Insert(tbl);
+                    Toast.MakeText(this, "User Created Successfully", ToastLength.Short).Show();
+                } // END IF
+                else
+                {
+                    Toast.MakeText(this, "Password does not match", ToastLength.Short).Show();
+                }// END ELSE
             }
             catch (Exception exception)
             {
