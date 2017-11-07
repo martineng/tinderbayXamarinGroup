@@ -34,7 +34,7 @@ namespace TinderBay
 
             try
             {
-                string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db3");
+                string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db");
                 var db = new SQLiteConnection(dpPath);
 
                 db.CreateTable<LoginTable>();
