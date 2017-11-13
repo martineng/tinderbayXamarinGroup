@@ -69,8 +69,14 @@ namespace TinderBay
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060017
-			public const int btnConfirm = 2131099671;
+			// aapt resource value: 0x7f060015
+			public const int TagSelectSpinner = 2131099669;
+			
+			// aapt resource value: 0x7f060016
+			public const int TagText = 2131099670;
+			
+			// aapt resource value: 0x7f06001c
+			public const int btnConfirm = 2131099676;
 			
 			// aapt resource value: 0x7f060011
 			public const int btnHistory = 2131099665;
@@ -93,8 +99,11 @@ namespace TinderBay
 			// aapt resource value: 0x7f06000f
 			public const int btnUpdatePassword = 2131099663;
 			
-			// aapt resource value: 0x7f060016
-			public const int etxtConfirmPassword = 2131099670;
+			// aapt resource value: 0x7f060018
+			public const int displayText = 2131099672;
+			
+			// aapt resource value: 0x7f06001b
+			public const int etxtConfirmPassword = 2131099675;
 			
 			// aapt resource value: 0x7f060009
 			public const int etxtPassword = 2131099657;
@@ -120,8 +129,14 @@ namespace TinderBay
 			// aapt resource value: 0x7f060000
 			public const int relativeLayout1 = 2131099648;
 			
-			// aapt resource value: 0x7f060015
-			public const int vtxtConfirmPassword = 2131099669;
+			// aapt resource value: 0x7f060017
+			public const int returnBtn = 2131099671;
+			
+			// aapt resource value: 0x7f060014
+			public const int searchEditText = 2131099668;
+			
+			// aapt resource value: 0x7f06001a
+			public const int vtxtConfirmPassword = 2131099674;
 			
 			// aapt resource value: 0x7f06000d
 			public const int vtxtEmail = 2131099661;
@@ -135,8 +150,8 @@ namespace TinderBay
 			// aapt resource value: 0x7f060008
 			public const int vtxtPassword = 2131099656;
 			
-			// aapt resource value: 0x7f060014
-			public const int vtxtSignup = 2131099668;
+			// aapt resource value: 0x7f060019
+			public const int vtxtSignup = 2131099673;
 			
 			// aapt resource value: 0x7f060006
 			public const int vtxtUsername = 2131099654;
@@ -167,10 +182,13 @@ namespace TinderBay
 			public const int SearchLayout = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int SignupLayout = 2130968580;
+			public const int SearchResultLayout = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int UpdatePasswordLayout = 2130968581;
+			public const int SignupLayout = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int UpdatePasswordLayout = 2130968582;
 			
 			static Layout()
 			{

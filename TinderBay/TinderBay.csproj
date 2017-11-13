@@ -58,6 +58,7 @@
     <Compile Include="UpdatePasswordActivity.cs" />
     <Compile Include="SearchActivity.cs" />
     <Compile Include="HomeActivity.cs" />
+    <Compile Include="SearchResultActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -82,6 +83,7 @@
     <AndroidResource Include="Resources\drawable\bike.jpg" />
     <AndroidResource Include="Resources\drawable\car.jpg" />
     <AndroidResource Include="Resources\drawable\fryingpan.jpg" />
+    <AndroidResource Include="Resources\layout\SearchResultLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
