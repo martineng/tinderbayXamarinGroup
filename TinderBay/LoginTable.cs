@@ -1,6 +1,9 @@
 ﻿using System;
 using SQLite;
 
+/* Coded by: Martin ENG
+ * E-mail: me@martineng.info */
+
 namespace TinderBay
 {
     

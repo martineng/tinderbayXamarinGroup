@@ -6,6 +6,9 @@ using System;
 using System.IO;
 using SQLite;
 
+/* Coded by: Martin ENG
+ * E-mail: me@martineng.info */
+
 namespace TinderBay
 {
     [Activity(Label = "TinderBay", MainLauncher = true, Icon = "@mipmap/icon")]

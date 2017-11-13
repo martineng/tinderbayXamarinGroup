@@ -6,6 +6,9 @@ using Android.OS;
 using Android.Widget;
 using SQLite;
 
+/* Coded by: Martin ENG
+ * E-mail: me@martineng.info */
+
 namespace TinderBay
 {
     [Activity(Label = "SignupActivity")]

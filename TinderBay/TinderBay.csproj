@@ -55,6 +55,9 @@
     <Compile Include="LoginTable.cs" />
     <Compile Include="SignupActivity.cs" />
     <Compile Include="ProfileActivity.cs" />
+    <Compile Include="UpdatePasswordActivity.cs" />
+    <Compile Include="SearchActivity.cs" />
+    <Compile Include="HomeActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -73,6 +76,12 @@
     <AndroidResource Include="Resources\layout\SignupLayout.axml" />
     <AndroidResource Include="Resources\drawable\userLoginEtxtBackground.xml" />
     <AndroidResource Include="Resources\layout\ProfileLayout.axml" />
+    <AndroidResource Include="Resources\layout\UpdatePasswordLayout.axml" />
+    <AndroidResource Include="Resources\layout\HomeLayout.axml" />
+    <AndroidResource Include="Resources\layout\SearchLayout.axml" />
+    <AndroidResource Include="Resources\drawable\bike.jpg" />
+    <AndroidResource Include="Resources\drawable\car.jpg" />
+    <AndroidResource Include="Resources\drawable\fryingpan.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
