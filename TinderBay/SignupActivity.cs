@@ -19,6 +19,7 @@ namespace TinderBay
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.SignupLayout);
 
             btnConfirm = FindViewById<Button>(Resource.Id.btnConfirm);

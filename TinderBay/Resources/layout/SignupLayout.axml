@@ -55,7 +55,6 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:typeface="monospace"
-        android:layout_marginBottom="20dp"
         android:textColor="#000" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceMedium"

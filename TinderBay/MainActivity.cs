@@ -44,10 +44,17 @@ namespace TinderBay
                 var dataTable = db.Table<LoginTable>();
                 var dataNode = dataTable.Where(x => x.username == etxtUsername.Text).FirstOrDefault(); // Linq Query
 
+                /*
+                if (etxtUsername.Text=="martin" && etxtPassword.Text=="martin")
+                {
+                    StartActivity(typeof(ProfileActivity));
+                }*/
+
                 // Check if input matched
                 if (dataNode != null && BCrypt.Net.BCrypt.Verify(etxtPassword.Text, dataNode.passwordHash))
                 {
                     Toast.MakeText(this, "Login Success!", ToastLength.Short).Show();
+                    StartActivity(typeof(ProfileActivity));
                 }
                 else
                 {
@@ -65,6 +72,7 @@ namespace TinderBay
             StartActivity(typeof(SignupActivity)); // Call the next view
         }
 
+        /*
         // This method create the database the first time it runs
         // condition when database does not exit
         protected string CreateDb()
@@ -74,7 +82,7 @@ namespace TinderBay
             var db = new SQLiteConnection(dpPath);
             return output += "\n Database Created...";
         } // END CreateDb()
-
+        */
     }
 }
 
