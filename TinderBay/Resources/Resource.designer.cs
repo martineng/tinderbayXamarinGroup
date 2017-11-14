@@ -154,6 +154,12 @@ namespace TinderBay
 			// aapt resource value: 0x7f07003e
 			public const int etxtConfirmPassword = 2131165246;
 			
+			// aapt resource value: 0x7f070041
+			public const int etxtCurrentPassword = 2131165249;
+			
+			// aapt resource value: 0x7f070043
+			public const int etxtNewPassword = 2131165251;
+			
 			// aapt resource value: 0x7f07002c
 			public const int etxtPassword = 2131165228;
 			
@@ -271,6 +277,9 @@ namespace TinderBay
 			// aapt resource value: 0x7f07003d
 			public const int vtxtConfirmPassword = 2131165245;
 			
+			// aapt resource value: 0x7f070040
+			public const int vtxtCurrentPassword = 2131165248;
+			
 			// aapt resource value: 0x7f070030
 			public const int vtxtEmail = 2131165232;
 			
@@ -279,6 +288,9 @@ namespace TinderBay
 			
 			// aapt resource value: 0x7f070028
 			public const int vtxtLogin = 2131165224;
+			
+			// aapt resource value: 0x7f070042
+			public const int vtxtNewPassword = 2131165250;
 			
 			// aapt resource value: 0x7f07002b
 			public const int vtxtPassword = 2131165227;

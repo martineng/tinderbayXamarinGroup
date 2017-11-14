@@ -83,7 +83,6 @@
         android:layout_height="35.0dp"
         android:id="@+id/btnConfirm"
         android:text="Confirm"
-        android:textColor="#000"
         android:background="#0089FB"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"

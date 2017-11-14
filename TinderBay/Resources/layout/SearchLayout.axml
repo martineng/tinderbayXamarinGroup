@@ -31,10 +31,11 @@
         android:textColor="#000" />
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:id="@+id/TagSelectSpinner"
         android:background="#0089FB"
-        android:textColor="#000" />
+        android:textColor="#fff"
+        android:popupBackground="#0089FB" />
     <TextView
         android:text="Text"
         android:layout_width="match_parent"

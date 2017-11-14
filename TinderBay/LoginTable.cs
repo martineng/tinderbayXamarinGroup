@@ -6,7 +6,9 @@ using SQLite;
 
 namespace TinderBay
 {
-    
+    /* Coded by: Martin ENG
+     * E-mail: me@martineng.info */
+
     public class LoginTable
     {
         /* LoginTable is used for the login credential 

@@ -37,10 +37,12 @@ namespace TinderBay
             btnToHome = FindViewById<Button>(Resource.Id.btnToHome);
             btnToAccount = FindViewById<Button>(Resource.Id.btnToAccount);
             btnHistory = FindViewById<Button>(Resource.Id.btnHistory);
+            btnUpdatePassword = FindViewById<Button>(Resource.Id.btnUpdatePassword);
 
             btnToAccount.Click += btnToAccount_Click;
             btnToHome.Click += BtnToHome_Click;
             btnHistory.Click += btnHistory_Click;
+            btnUpdatePassword.Click += btnUpdatePassword_Click;
         }
 
         public void btnToAccount_Click(object sender, EventArgs e)
@@ -60,7 +62,7 @@ namespace TinderBay
 
         protected void btnUpdatePassword_Click(object sender, EventArgs e)
         {
-            
+            StartActivity(typeof(UpdatePasswordActivity));
         }
 
         protected void btnUpdateEmail_Click(object sender, EventArgs e)

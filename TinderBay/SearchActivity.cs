@@ -22,6 +22,7 @@ namespace TinderBay
         private Button btnToAccount;
         protected Button btnToHome;
 
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

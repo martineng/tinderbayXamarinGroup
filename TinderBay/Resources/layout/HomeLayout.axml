@@ -20,7 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnToSearch"
-            android:text="Search" />
+            android:text="Search"
+            android:background="#0089FB" />
         <Button
             android:text="Account"
             android:layout_width="match_parent"
@@ -70,6 +71,7 @@
             android:text="Button Buy Temp."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnBuy" />
+            android:id="@+id/btnBuy"
+            android:background="#0089FB" />
     </LinearLayout>
 </RelativeLayout>
