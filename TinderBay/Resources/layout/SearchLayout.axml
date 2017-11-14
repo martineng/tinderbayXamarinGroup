@@ -27,7 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/searchEditText"
-        android:hint="Search" />
+        android:hint="Search"
+        android:textColor="#000" />
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

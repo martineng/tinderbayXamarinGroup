@@ -32,6 +32,7 @@ namespace TinderBay
 
         protected Button btnToAccount;
         protected Button btnToHome;
+        protected Button btnBuy;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,12 +40,12 @@ namespace TinderBay
             Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
 
             // Set out view from the layout resource
-            SetContentView(Resource.Layout.ProfileLayout);
+            SetContentView(Resource.Layout.CheckoutLayout);
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.buybutton);
-            button.Click += Button_Click;
+            btnBuy = FindViewById<Button>(Resource.Id.buybutton);
+            btnBuy.Click += btnBuy_Click;
 
             btnToHome = FindViewById<Button>(Resource.Id.btnToHome);
             btnToAccount = FindViewById<Button>(Resource.Id.btnToAccount);
@@ -57,8 +58,8 @@ namespace TinderBay
             intent.PutExtra(PayPalService.ExtraPaypalConfiguration, config);
             this.StartService(intent);
         }
-
-        private void Button_Click(object sender, EventArgs eventArgs)
+          
+        public void btnBuy_Click(object sender, EventArgs e)
         {
             var payment = new PayPalPayment(new BigDecimal("2.45"), "AUD", "the item",
                 PayPalPayment.PaymentIntentSale);
