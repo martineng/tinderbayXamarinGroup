@@ -28,6 +28,22 @@ namespace TinderBay
 		{
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int tagArray = 2131099648;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -81,191 +97,191 @@ namespace TinderBay
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060036
-			public const int TagSelectSpinner = 2131099702;
+			// aapt resource value: 0x7f070036
+			public const int TagSelectSpinner = 2131165238;
 			
-			// aapt resource value: 0x7f060037
-			public const int TagText = 2131099703;
+			// aapt resource value: 0x7f070037
+			public const int TagText = 2131165239;
 			
-			// aapt resource value: 0x7f060000
-			public const int actionMenuView = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int actionMenuView = 2131165184;
 			
-			// aapt resource value: 0x7f06003d
-			public const int btnConfirm = 2131099709;
+			// aapt resource value: 0x7f07003d
+			public const int btnConfirm = 2131165245;
 			
-			// aapt resource value: 0x7f060032
-			public const int btnHistory = 2131099698;
+			// aapt resource value: 0x7f070032
+			public const int btnHistory = 2131165234;
 			
-			// aapt resource value: 0x7f06002b
-			public const int btnLogin = 2131099691;
+			// aapt resource value: 0x7f07002b
+			public const int btnLogin = 2131165227;
 			
-			// aapt resource value: 0x7f060034
-			public const int btnLogout = 2131099700;
+			// aapt resource value: 0x7f070034
+			public const int btnLogout = 2131165236;
 			
-			// aapt resource value: 0x7f060033
-			public const int btnSale = 2131099699;
+			// aapt resource value: 0x7f070033
+			public const int btnSale = 2131165235;
 			
-			// aapt resource value: 0x7f06002c
-			public const int btnSignup = 2131099692;
+			// aapt resource value: 0x7f07002c
+			public const int btnSignup = 2131165228;
 			
-			// aapt resource value: 0x7f060002
-			public const int btnToAccount = 2131099650;
+			// aapt resource value: 0x7f070002
+			public const int btnToAccount = 2131165186;
 			
-			// aapt resource value: 0x7f060001
-			public const int btnToHome = 2131099649;
+			// aapt resource value: 0x7f070001
+			public const int btnToHome = 2131165185;
 			
-			// aapt resource value: 0x7f060031
-			public const int btnUpdateEmail = 2131099697;
+			// aapt resource value: 0x7f070031
+			public const int btnUpdateEmail = 2131165233;
 			
-			// aapt resource value: 0x7f060030
-			public const int btnUpdatePassword = 2131099696;
+			// aapt resource value: 0x7f070030
+			public const int btnUpdatePassword = 2131165232;
 			
-			// aapt resource value: 0x7f060022
-			public const int button4 = 2131099682;
+			// aapt resource value: 0x7f070022
+			public const int button4 = 2131165218;
 			
-			// aapt resource value: 0x7f060003
-			public const int buybutton = 2131099651;
+			// aapt resource value: 0x7f070003
+			public const int buybutton = 2131165187;
 			
-			// aapt resource value: 0x7f060039
-			public const int displayText = 2131099705;
+			// aapt resource value: 0x7f070039
+			public const int displayText = 2131165241;
 			
-			// aapt resource value: 0x7f06003c
-			public const int etxtConfirmPassword = 2131099708;
+			// aapt resource value: 0x7f07003c
+			public const int etxtConfirmPassword = 2131165244;
 			
-			// aapt resource value: 0x7f06002a
-			public const int etxtPassword = 2131099690;
+			// aapt resource value: 0x7f07002a
+			public const int etxtPassword = 2131165226;
 			
-			// aapt resource value: 0x7f060028
-			public const int etxtUsername = 2131099688;
+			// aapt resource value: 0x7f070028
+			public const int etxtUsername = 2131165224;
 			
-			// aapt resource value: 0x7f060008
-			public const int gridLayout1 = 2131099656;
+			// aapt resource value: 0x7f070008
+			public const int gridLayout1 = 2131165192;
 			
-			// aapt resource value: 0x7f060023
-			public const int imageView1 = 2131099683;
+			// aapt resource value: 0x7f070023
+			public const int imageView1 = 2131165219;
 			
-			// aapt resource value: 0x7f06002d
-			public const int imgbtnProfile = 2131099693;
+			// aapt resource value: 0x7f07002d
+			public const int imgbtnProfile = 2131165229;
 			
-			// aapt resource value: 0x7f060005
-			public const int linearLayout1 = 2131099653;
+			// aapt resource value: 0x7f070005
+			public const int linearLayout1 = 2131165189;
 			
-			// aapt resource value: 0x7f060018
-			public const int linearLayout10 = 2131099672;
+			// aapt resource value: 0x7f070018
+			public const int linearLayout10 = 2131165208;
 			
-			// aapt resource value: 0x7f06001b
-			public const int linearLayout11 = 2131099675;
+			// aapt resource value: 0x7f07001b
+			public const int linearLayout11 = 2131165211;
 			
-			// aapt resource value: 0x7f06001e
-			public const int linearLayout12 = 2131099678;
+			// aapt resource value: 0x7f07001e
+			public const int linearLayout12 = 2131165214;
 			
-			// aapt resource value: 0x7f06001f
-			public const int linearLayout13 = 2131099679;
+			// aapt resource value: 0x7f07001f
+			public const int linearLayout13 = 2131165215;
 			
-			// aapt resource value: 0x7f060025
-			public const int linearLayout2 = 2131099685;
+			// aapt resource value: 0x7f070025
+			public const int linearLayout2 = 2131165221;
 			
-			// aapt resource value: 0x7f060009
-			public const int linearLayout4 = 2131099657;
+			// aapt resource value: 0x7f070009
+			public const int linearLayout4 = 2131165193;
 			
-			// aapt resource value: 0x7f06000c
-			public const int linearLayout5 = 2131099660;
+			// aapt resource value: 0x7f07000c
+			public const int linearLayout5 = 2131165196;
 			
-			// aapt resource value: 0x7f06000f
-			public const int linearLayout6 = 2131099663;
+			// aapt resource value: 0x7f07000f
+			public const int linearLayout6 = 2131165199;
 			
-			// aapt resource value: 0x7f060012
-			public const int linearLayout7 = 2131099666;
+			// aapt resource value: 0x7f070012
+			public const int linearLayout7 = 2131165202;
 			
-			// aapt resource value: 0x7f060015
-			public const int linearLayout8 = 2131099669;
+			// aapt resource value: 0x7f070015
+			public const int linearLayout8 = 2131165205;
 			
-			// aapt resource value: 0x7f060024
-			public const int priceView = 2131099684;
+			// aapt resource value: 0x7f070024
+			public const int priceView = 2131165220;
 			
-			// aapt resource value: 0x7f060004
-			public const int relativeLayout1 = 2131099652;
+			// aapt resource value: 0x7f070004
+			public const int relativeLayout1 = 2131165188;
 			
-			// aapt resource value: 0x7f060038
-			public const int returnBtn = 2131099704;
+			// aapt resource value: 0x7f070038
+			public const int returnBtn = 2131165240;
 			
-			// aapt resource value: 0x7f060035
-			public const int searchEditText = 2131099701;
+			// aapt resource value: 0x7f070035
+			public const int searchEditText = 2131165237;
 			
-			// aapt resource value: 0x7f06000b
-			public const int textView12 = 2131099659;
+			// aapt resource value: 0x7f07000b
+			public const int textView12 = 2131165195;
 			
-			// aapt resource value: 0x7f06000e
-			public const int textView13 = 2131099662;
+			// aapt resource value: 0x7f07000e
+			public const int textView13 = 2131165198;
 			
-			// aapt resource value: 0x7f060011
-			public const int textView14 = 2131099665;
+			// aapt resource value: 0x7f070011
+			public const int textView14 = 2131165201;
 			
-			// aapt resource value: 0x7f060014
-			public const int textView15 = 2131099668;
+			// aapt resource value: 0x7f070014
+			public const int textView15 = 2131165204;
 			
-			// aapt resource value: 0x7f060017
-			public const int textView16 = 2131099671;
+			// aapt resource value: 0x7f070017
+			public const int textView16 = 2131165207;
 			
-			// aapt resource value: 0x7f06001a
-			public const int textView17 = 2131099674;
+			// aapt resource value: 0x7f07001a
+			public const int textView17 = 2131165210;
 			
-			// aapt resource value: 0x7f06001d
-			public const int textView18 = 2131099677;
+			// aapt resource value: 0x7f07001d
+			public const int textView18 = 2131165213;
 			
-			// aapt resource value: 0x7f060021
-			public const int textView19 = 2131099681;
+			// aapt resource value: 0x7f070021
+			public const int textView19 = 2131165217;
 			
-			// aapt resource value: 0x7f060006
-			public const int textView4 = 2131099654;
+			// aapt resource value: 0x7f070006
+			public const int textView4 = 2131165190;
 			
-			// aapt resource value: 0x7f060019
-			public const int view10 = 2131099673;
+			// aapt resource value: 0x7f070019
+			public const int view10 = 2131165209;
 			
-			// aapt resource value: 0x7f06001c
-			public const int view11 = 2131099676;
+			// aapt resource value: 0x7f07001c
+			public const int view11 = 2131165212;
 			
-			// aapt resource value: 0x7f060020
-			public const int view12 = 2131099680;
+			// aapt resource value: 0x7f070020
+			public const int view12 = 2131165216;
 			
-			// aapt resource value: 0x7f060007
-			public const int view2 = 2131099655;
+			// aapt resource value: 0x7f070007
+			public const int view2 = 2131165191;
 			
-			// aapt resource value: 0x7f06000a
-			public const int view5 = 2131099658;
+			// aapt resource value: 0x7f07000a
+			public const int view5 = 2131165194;
 			
-			// aapt resource value: 0x7f06000d
-			public const int view6 = 2131099661;
+			// aapt resource value: 0x7f07000d
+			public const int view6 = 2131165197;
 			
-			// aapt resource value: 0x7f060010
-			public const int view7 = 2131099664;
+			// aapt resource value: 0x7f070010
+			public const int view7 = 2131165200;
 			
-			// aapt resource value: 0x7f060013
-			public const int view8 = 2131099667;
+			// aapt resource value: 0x7f070013
+			public const int view8 = 2131165203;
 			
-			// aapt resource value: 0x7f060016
-			public const int view9 = 2131099670;
+			// aapt resource value: 0x7f070016
+			public const int view9 = 2131165206;
 			
-			// aapt resource value: 0x7f06003b
-			public const int vtxtConfirmPassword = 2131099707;
+			// aapt resource value: 0x7f07003b
+			public const int vtxtConfirmPassword = 2131165243;
 			
-			// aapt resource value: 0x7f06002e
-			public const int vtxtEmail = 2131099694;
+			// aapt resource value: 0x7f07002e
+			public const int vtxtEmail = 2131165230;
 			
-			// aapt resource value: 0x7f06002f
-			public const int vtxtItemSale = 2131099695;
+			// aapt resource value: 0x7f07002f
+			public const int vtxtItemSale = 2131165231;
 			
-			// aapt resource value: 0x7f060026
-			public const int vtxtLogin = 2131099686;
+			// aapt resource value: 0x7f070026
+			public const int vtxtLogin = 2131165222;
 			
-			// aapt resource value: 0x7f060029
-			public const int vtxtPassword = 2131099689;
+			// aapt resource value: 0x7f070029
+			public const int vtxtPassword = 2131165225;
 			
-			// aapt resource value: 0x7f06003a
-			public const int vtxtSignup = 2131099706;
+			// aapt resource value: 0x7f07003a
+			public const int vtxtSignup = 2131165242;
 			
-			// aapt resource value: 0x7f060027
-			public const int vtxtUsername = 2131099687;
+			// aapt resource value: 0x7f070027
+			public const int vtxtUsername = 2131165223;
 			
 			static Id()
 			{
@@ -336,11 +352,8 @@ namespace TinderBay
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int app_name = 2131034113;
-			
 			// aapt resource value: 0x7f050000
-			public const int hello = 2131034112;
+			public const int app_name = 2131034112;
 			
 			static String()
 			{

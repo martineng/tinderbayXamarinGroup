@@ -30,7 +30,7 @@ namespace TinderBay
             //retireve item sell date if sold
             // two entries for time being          
 
-            Button button1 = FindViewById<Button>(Resource.Id.);
+            Button button1 = FindViewById<Button>(Resource.Id.button4);
             button1.Click += delegate
             {
                 //var newActivity = new Intent(this, typeof(PurchasePage)); //MARTIN: connect this intent to account form please!            

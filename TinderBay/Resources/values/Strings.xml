@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">TinderBay</string>
+	<string-array name="tagArray">
+      <item>Select a tag</item>
+      <item>Car</item>
+      <item>Furniture</item>
+      <item>Clothes</item>
+      <item>Other</item>
+    </string-array>
 </resources>
