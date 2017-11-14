@@ -22,6 +22,10 @@ namespace TinderBay
         private GestureDetector _gesture;
         private TextView _textView;
         private ImageView _imageView;
+        protected Button btnToAccount;
+        protected Button btnToHome;
+        protected Button btnToSearch;
+        protected Button btnToBuy;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -31,7 +35,17 @@ namespace TinderBay
 
             _textView = FindViewById<TextView>(Resource.Id.priceView);
             _textView.Text = String.Format("${0}", 200);
-            _gesture = new GestureDetector(this);  
+            _gesture = new GestureDetector(this);
+
+            btnToHome = FindViewById<Button>(Resource.Id.btnToHome);
+            btnToAccount = FindViewById<Button>(Resource.Id.btnToAccount);
+            btnToSearch = FindViewById<Button>(Resource.Id.btnToSearch);
+            btnToBuy = FindViewById<Button>(Resource.Id.btnBuy);
+
+            btnToAccount.Click += BtnToAccount_Click;
+            btnToHome.Click += BtnToHome_Click;
+            btnToSearch.Click += BtnToSearch_Click;
+            btnToBuy.Click += BtnToBuy_Click;
         }
 
         /// <summary>
@@ -103,5 +117,26 @@ namespace TinderBay
         {
             return true;
         }
+
+        public void BtnToAccount_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(ProfileActivity));
+        }
+
+        public void BtnToHome_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(HomeActivity));
+        }
+
+        public void BtnToSearch_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(SearchActivity));
+        }
+
+        public void BtnToBuy_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(CheckoutActivity));
+        }
+
     }
 }

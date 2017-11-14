@@ -16,6 +16,9 @@ namespace TinderBay
     [Activity(Label = "HistoryActivity")]
     public class HistoryActivity : Activity
     {
+        protected Button btnToAccount;
+        protected Button btnToHome;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -36,6 +39,23 @@ namespace TinderBay
                 //var newActivity = new Intent(this, typeof(PurchasePage)); //MARTIN: connect this intent to account form please!            
                 //StartActivity(newActivity);
             };
+
+            btnToHome = FindViewById<Button>(Resource.Id.btnToHome);
+            btnToAccount = FindViewById<Button>(Resource.Id.btnToAccount);
+
+            btnToAccount.Click += BtnToAccount_Click;
+            btnToHome.Click += BtnToHome_Click;
         }
+
+        public void BtnToAccount_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(ProfileActivity));
+        }
+
+        public void BtnToHome_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(HomeActivity));
+        }
+
     }
 }

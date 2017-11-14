@@ -10,14 +10,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/actionMenuView">
         <Button
-            android:text="Button"
+            android:text="Home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnToHome"
             android:background="#0089FB"
             android:typeface="monospace" />
         <Button
-            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnToSearch"
+            android:text="Search" />
+        <Button
+            android:text="Account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnToAccount"
@@ -29,7 +34,8 @@
         android:minHeight="800px"
         android:layout_width="match_parent"
         android:layout_height="700px"
-        android:id="@+id/relativeLayout1">
+        android:id="@+id/relativeLayout1"
+        android:layout_marginTop="50dp">
         <ImageView
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_width="700px"
@@ -59,5 +65,11 @@
         android:layout_width="match_parent"
         android:layout_height="500px"
         android:id="@+id/linearLayout2"
-        android:layout_below="@id/linearLayout1" />
+        android:layout_below="@id/linearLayout1">
+        <Button
+            android:text="Button Buy Temp."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBuy" />
+    </LinearLayout>
 </RelativeLayout>

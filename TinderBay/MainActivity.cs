@@ -57,7 +57,7 @@ namespace TinderBay
                 if (dataNode != null && BCrypt.Net.BCrypt.Verify(etxtPassword.Text, dataNode.passwordHash))
                 {
                     Toast.MakeText(this, "Login Success!", ToastLength.Short).Show();
-                    StartActivity(typeof(ProfileActivity));
+                    StartActivity(typeof(HomeActivity));
                 }
                 else
                 {

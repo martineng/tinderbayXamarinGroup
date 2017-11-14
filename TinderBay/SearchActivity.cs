@@ -19,12 +19,17 @@ namespace TinderBay
     public class SearchActivity : Activity
     {
         private List<string> SelectedTagsList;
+        private Button btnToAccount;
+        protected Button btnToHome;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.SearchLayout);
+
+            btnToHome = FindViewById<Button>(Resource.Id.btnToHome);
+            btnToAccount = FindViewById<Button>(Resource.Id.btnToAccount);
 
             SelectedTagsList = new List<string>();
 
@@ -40,6 +45,9 @@ namespace TinderBay
             TagSelectSpinner.ItemSelected += new System.EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             TagSelectSpinner.Adapter = adapter;
+
+            btnToAccount.Click += BtnToAccount_Click;
+            btnToHome.Click += BtnToHome_Click;
 
             //Set up button
             Button returnBtn = FindViewById<Button>(Resource.Id.returnBtn);
@@ -93,6 +101,16 @@ namespace TinderBay
                 tempString = tempString + " " + tag;
             }
             TagText.Text = tempString;
+        }
+
+        public void BtnToAccount_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(ProfileActivity));
+        }
+
+        public void BtnToHome_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(HomeActivity));
         }
     }
 }

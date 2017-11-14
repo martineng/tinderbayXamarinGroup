@@ -9,14 +9,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/actionMenuView">
         <Button
-            android:text="Button"
+            android:text="Home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnToHome"
             android:background="#0089FB"
             android:typeface="monospace" />
         <Button
-            android:text="Button"
+            android:text="Account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnToAccount"

@@ -30,6 +30,9 @@ namespace TinderBay
      .Environment(PayPalConfiguration.EnvironmentSandbox)
      .ClientId("AcR8bCwFgG6GHUG96oFFrG6e7SX9E5LGtvezyzDaYdMj_vuM--glz3W-JvdXpGSie3BU8nhRJHIfEM5n");
 
+        protected Button btnToAccount;
+        protected Button btnToHome;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -41,7 +44,13 @@ namespace TinderBay
             // Get our button from the layout resource,
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.buybutton);
-            button.Click += this.ButtonOnClick;
+            button.Click += Button_Click;
+
+            btnToHome = FindViewById<Button>(Resource.Id.btnToHome);
+            btnToAccount = FindViewById<Button>(Resource.Id.btnToAccount);
+
+            btnToAccount.Click += BtnToAccount_Click;
+            btnToHome.Click += BtnToHome_Click;
 
             // start paypal service
             var intent = new Intent(this, typeof(PayPalService));
@@ -49,7 +58,7 @@ namespace TinderBay
             this.StartService(intent);
         }
 
-        private void ButtonOnClick(object sender, EventArgs eventArgs)
+        private void Button_Click(object sender, EventArgs eventArgs)
         {
             var payment = new PayPalPayment(new BigDecimal("2.45"), "AUD", "the item",
                 PayPalPayment.PaymentIntentSale);
@@ -85,6 +94,16 @@ namespace TinderBay
         {
             this.StopService(new Intent(this, typeof(PayPalService)));
             base.OnDestroy();
+        }
+
+        public void BtnToAccount_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(ProfileActivity));
+        }
+
+        public void BtnToHome_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(HomeActivity));
         }
     }
 }
