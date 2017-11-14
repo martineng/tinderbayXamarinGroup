@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="#fff">
     <ActionMenuView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +49,8 @@
             android:text="PRICE"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/priceView" />
+            android:id="@+id/priceView"
+            android:textColor="#000" />
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"

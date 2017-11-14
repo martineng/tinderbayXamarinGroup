@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="#fff">
     <ActionMenuView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,8 +26,10 @@
             android:typeface="monospace" />
     </ActionMenuView>
     <Button
-        android:text="Button"
+        android:text="Paypal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buybutton" />
+        android:id="@+id/buybutton"
+        android:background="#0089FB"
+        android:layout_marginTop="50dp" />
 </LinearLayout>
