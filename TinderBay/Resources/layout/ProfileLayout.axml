@@ -15,6 +15,25 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <ActionMenuView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actionMenuView">
+                <Button
+                    android:text="Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnToHome"
+                    android:background="#0089FB"
+                    android:typeface="monospace" />
+                <Button
+                    android:text="Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnToAccount"
+                    android:background="#0089FB"
+                    android:typeface="monospace" />
+            </ActionMenuView>
             <ImageButton
                 android:src="@android:drawable/ic_menu_gallery"
                 android:layout_width="match_parent"

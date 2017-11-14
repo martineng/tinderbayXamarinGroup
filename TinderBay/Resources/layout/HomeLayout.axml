@@ -4,6 +4,25 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
+    <ActionMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionMenuView">
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnToHome"
+            android:background="#0089FB"
+            android:typeface="monospace" />
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnToAccount"
+            android:background="#0089FB"
+            android:typeface="monospace" />
+    </ActionMenuView>
     <RelativeLayout
         android:minWidth="800px"
         android:minHeight="800px"
