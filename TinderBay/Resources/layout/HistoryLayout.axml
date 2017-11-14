@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout1"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Sale History"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:layout_marginTop="19.0dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:id="@+id/view2"
+            android:background="@android:color/white"
+            android:layout_marginTop="20.0dp" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="376.5dp"
+            android:id="@+id/gridLayout1"
+            android:layout_marginTop="5.0dp"
+            android:rowCount="4"
+            android:columnCount="5">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="75.0dp"
+                android:layout_height="75.0dp"
+                android:id="@+id/linearLayout4"
+                android:layout_marginLeft="5dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/view5"
+                    android:layout_marginTop="2.0dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/shoe1" />
+                <TextView
+                    android:text="Shoe 10/11/17"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linearLayout5"
+                android:layout_height="75.0dp"
+                android:layout_width="75.0dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/view6"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="2.0dp"
+                    android:background="@drawable/bucket1" />
+                <TextView
+                    android:text="Bucket 10/12/17"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout6"
+                android:layout_height="75.0dp"
+                android:layout_width="75.0dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/view7"
+                    android:background="@drawable/pencil"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="2.0dp" />
+                <TextView
+                    android:text="On Sale"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout7"
+                android:layout_height="75.0dp"
+                android:layout_width="75.0dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/view8"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="2.0dp" />
+                <TextView
+                    android:text="----"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout8"
+                android:layout_height="75.0dp"
+                android:layout_width="75.0dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/view9"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="2.0dp" />
+                <TextView
+                    android:text="----"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout10"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/view10"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7.0dp" />
+                <TextView
+                    android:text="----"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout11"
+                android:layout_height="75.0dp"
+                android:layout_width="75.0dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/view11"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7.0dp" />
+                <TextView
+                    android:text="----"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView18"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout12"
+                android:layout_height="75.0dp"
+                android:layout_width="75.0dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/view11"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="7.0dp"
+                    android:layout_marginLeft="13.0dp" />
+                <TextView
+                    android:text="----"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView18"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout13"
+                android:layout_height="75.0dp"
+                android:layout_width="75.0dp">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/view12"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="7.0dp"
+                    android:layout_marginLeft="13.0dp" />
+                <TextView
+                    android:text="----"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView19"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </GridLayout>
+        <Button
+            android:text="Back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4" />
+    </LinearLayout>
+</RelativeLayout>

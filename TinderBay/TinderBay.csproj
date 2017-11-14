@@ -69,6 +69,7 @@
     <Compile Include="HomeActivity.cs" />
     <Compile Include="SearchResultActivity.cs" />
     <Compile Include="CheckoutActivity.cs" />
+    <Compile Include="HistoryActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -95,6 +96,11 @@
     <AndroidResource Include="Resources\drawable\fryingpan.jpg" />
     <AndroidResource Include="Resources\layout\SearchResultLayout.axml" />
     <AndroidResource Include="Resources\layout\CheckoutLayout.axml" />
+    <AndroidResource Include="Resources\layout\HistoryLayout.axml" />
+    <AndroidResource Include="Resources\drawable\bucket1.jpg" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\Pencil.jpg" />
+    <AndroidResource Include="Resources\drawable\shoe1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
