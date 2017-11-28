@@ -70,19 +70,40 @@ namespace TinderBay
 			public const int car = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int fryingpan = 2130837507;
+			public const int five = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Icon = 2130837508;
+			public const int four = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int Pencil = 2130837509;
+			public const int fryingpan = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int shoe1 = 2130837510;
+			public const int Icon = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int userLoginEtxtBackground = 2130837511;
+			public const int one = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int Pencil = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int shoe1 = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int six = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int three = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int two = 2130837516;
+			
+			// aapt resource value: 0x7f02000d
+			public const int userLoginEtxtBackground = 2130837517;
+			
+			// aapt resource value: 0x7f02000e
+			public const int zero = 2130837518;
 			
 			static Drawable()
 			{
@@ -100,32 +121,29 @@ namespace TinderBay
 			// aapt resource value: 0x7f070038
 			public const int TagSelectSpinner = 2131165240;
 			
-			// aapt resource value: 0x7f070039
-			public const int TagText = 2131165241;
-			
 			// aapt resource value: 0x7f070000
 			public const int actionMenuView = 2131165184;
 			
-			// aapt resource value: 0x7f070027
-			public const int btnBuy = 2131165223;
+			// aapt resource value: 0x7f070028
+			public const int btnBuy = 2131165224;
 			
-			// aapt resource value: 0x7f07003f
-			public const int btnConfirm = 2131165247;
-			
-			// aapt resource value: 0x7f070034
-			public const int btnHistory = 2131165236;
-			
-			// aapt resource value: 0x7f07002d
-			public const int btnLogin = 2131165229;
-			
-			// aapt resource value: 0x7f070036
-			public const int btnLogout = 2131165238;
+			// aapt resource value: 0x7f07003e
+			public const int btnConfirm = 2131165246;
 			
 			// aapt resource value: 0x7f070035
-			public const int btnSale = 2131165237;
+			public const int btnHistory = 2131165237;
 			
 			// aapt resource value: 0x7f07002e
-			public const int btnSignup = 2131165230;
+			public const int btnLogin = 2131165230;
+			
+			// aapt resource value: 0x7f070037
+			public const int btnLogout = 2131165239;
+			
+			// aapt resource value: 0x7f070036
+			public const int btnSale = 2131165238;
+			
+			// aapt resource value: 0x7f07002f
+			public const int btnSignup = 2131165231;
 			
 			// aapt resource value: 0x7f070002
 			public const int btnToAccount = 2131165186;
@@ -136,11 +154,11 @@ namespace TinderBay
 			// aapt resource value: 0x7f070023
 			public const int btnToSearch = 2131165219;
 			
-			// aapt resource value: 0x7f070033
-			public const int btnUpdateEmail = 2131165235;
+			// aapt resource value: 0x7f070034
+			public const int btnUpdateEmail = 2131165236;
 			
-			// aapt resource value: 0x7f070032
-			public const int btnUpdatePassword = 2131165234;
+			// aapt resource value: 0x7f070033
+			public const int btnUpdatePassword = 2131165235;
 			
 			// aapt resource value: 0x7f070022
 			public const int button4 = 2131165218;
@@ -148,23 +166,17 @@ namespace TinderBay
 			// aapt resource value: 0x7f070003
 			public const int buybutton = 2131165187;
 			
-			// aapt resource value: 0x7f07003b
-			public const int displayText = 2131165243;
+			// aapt resource value: 0x7f07003a
+			public const int displayText = 2131165242;
 			
-			// aapt resource value: 0x7f07003e
-			public const int etxtConfirmPassword = 2131165246;
+			// aapt resource value: 0x7f07003d
+			public const int etxtConfirmPassword = 2131165245;
 			
-			// aapt resource value: 0x7f070041
-			public const int etxtCurrentPassword = 2131165249;
+			// aapt resource value: 0x7f07002d
+			public const int etxtPassword = 2131165229;
 			
-			// aapt resource value: 0x7f070043
-			public const int etxtNewPassword = 2131165251;
-			
-			// aapt resource value: 0x7f07002c
-			public const int etxtPassword = 2131165228;
-			
-			// aapt resource value: 0x7f07002a
-			public const int etxtUsername = 2131165226;
+			// aapt resource value: 0x7f07002b
+			public const int etxtUsername = 2131165227;
 			
 			// aapt resource value: 0x7f070008
 			public const int gridLayout1 = 2131165192;
@@ -172,8 +184,8 @@ namespace TinderBay
 			// aapt resource value: 0x7f070024
 			public const int imageView1 = 2131165220;
 			
-			// aapt resource value: 0x7f07002f
-			public const int imgbtnProfile = 2131165231;
+			// aapt resource value: 0x7f070030
+			public const int imgbtnProfile = 2131165232;
 			
 			// aapt resource value: 0x7f070005
 			public const int linearLayout1 = 2131165189;
@@ -190,8 +202,8 @@ namespace TinderBay
 			// aapt resource value: 0x7f07001f
 			public const int linearLayout13 = 2131165215;
 			
-			// aapt resource value: 0x7f070026
-			public const int linearLayout2 = 2131165222;
+			// aapt resource value: 0x7f070025
+			public const int linearLayout2 = 2131165221;
 			
 			// aapt resource value: 0x7f070009
 			public const int linearLayout4 = 2131165193;
@@ -208,17 +220,17 @@ namespace TinderBay
 			// aapt resource value: 0x7f070015
 			public const int linearLayout8 = 2131165205;
 			
-			// aapt resource value: 0x7f070025
-			public const int priceView = 2131165221;
+			// aapt resource value: 0x7f070027
+			public const int priceView = 2131165223;
+			
+			// aapt resource value: 0x7f070026
+			public const int productNameView = 2131165222;
 			
 			// aapt resource value: 0x7f070004
 			public const int relativeLayout1 = 2131165188;
 			
-			// aapt resource value: 0x7f07003a
-			public const int returnBtn = 2131165242;
-			
-			// aapt resource value: 0x7f070037
-			public const int searchEditText = 2131165239;
+			// aapt resource value: 0x7f070039
+			public const int returnBtn = 2131165241;
 			
 			// aapt resource value: 0x7f07000b
 			public const int textView12 = 2131165195;
@@ -274,32 +286,26 @@ namespace TinderBay
 			// aapt resource value: 0x7f070016
 			public const int view9 = 2131165206;
 			
-			// aapt resource value: 0x7f07003d
-			public const int vtxtConfirmPassword = 2131165245;
-			
-			// aapt resource value: 0x7f070040
-			public const int vtxtCurrentPassword = 2131165248;
-			
-			// aapt resource value: 0x7f070030
-			public const int vtxtEmail = 2131165232;
+			// aapt resource value: 0x7f07003c
+			public const int vtxtConfirmPassword = 2131165244;
 			
 			// aapt resource value: 0x7f070031
-			public const int vtxtItemSale = 2131165233;
+			public const int vtxtEmail = 2131165233;
 			
-			// aapt resource value: 0x7f070028
-			public const int vtxtLogin = 2131165224;
-			
-			// aapt resource value: 0x7f070042
-			public const int vtxtNewPassword = 2131165250;
-			
-			// aapt resource value: 0x7f07002b
-			public const int vtxtPassword = 2131165227;
-			
-			// aapt resource value: 0x7f07003c
-			public const int vtxtSignup = 2131165244;
+			// aapt resource value: 0x7f070032
+			public const int vtxtItemSale = 2131165234;
 			
 			// aapt resource value: 0x7f070029
-			public const int vtxtUsername = 2131165225;
+			public const int vtxtLogin = 2131165225;
+			
+			// aapt resource value: 0x7f07002c
+			public const int vtxtPassword = 2131165228;
+			
+			// aapt resource value: 0x7f07003b
+			public const int vtxtSignup = 2131165243;
+			
+			// aapt resource value: 0x7f07002a
+			public const int vtxtUsername = 2131165226;
 			
 			static Id()
 			{

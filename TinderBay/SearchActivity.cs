@@ -22,6 +22,7 @@ namespace TinderBay
         private Button btnToAccount;
         protected Button btnToHome;
 
+        private string selectedTag;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,11 +35,11 @@ namespace TinderBay
 
             SelectedTagsList = new List<string>();
 
-            //Set up text view
-            TextView TagText = FindViewById<TextView>(Resource.Id.TagText);
+            //Set up text view (Removed for Demo)
+            //TextView TagText = FindViewById<TextView>(Resource.Id.TagText);
 
-            //Set up search bar
-            EditText searchEditText = FindViewById<EditText>(Resource.Id.searchEditText);
+            //Set up search bar (Removed for Demo)
+            //EditText searchEditText = FindViewById<EditText>(Resource.Id.searchEditText);
 
             //Set up spinner
             Spinner TagSelectSpinner = FindViewById<Spinner>(Resource.Id.TagSelectSpinner);
@@ -54,23 +55,24 @@ namespace TinderBay
             Button returnBtn = FindViewById<Button>(Resource.Id.returnBtn);
             returnBtn.Click += delegate
             {
-                var secondaryActivity = new Intent(this, typeof(SearchResultActivity));
-                secondaryActivity.PutExtra("Search", searchEditText.Text);
-                StartActivity(secondaryActivity);
+                var homeActivity = new Intent(this, typeof(HomeActivity));
+                homeActivity.PutExtra("Tag", selectedTag);
+                StartActivity(homeActivity);
             };
         }
 
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
+            
             //Set up spinner and text view
             Spinner spinner = (Spinner)sender;
-            TextView TagText = FindViewById<TextView>(Resource.Id.TagText);
-
+            //TextView TagText = FindViewById<TextView>(Resource.Id.TagText); (Removed for Demo)
 
 
             //Read selected item from spinner
-            string selectedTag = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
+            selectedTag = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
 
+            /* (Removed for Demo)
             //Check if the selected tag is already in the list
             bool tagAlreadySelected = false;
             foreach (string tag in SelectedTagsList)
@@ -101,7 +103,7 @@ namespace TinderBay
             {
                 tempString = tempString + " " + tag;
             }
-            TagText.Text = tempString;
+            TagText.Text = tempString;*/
         }
 
         public void BtnToAccount_Click(object sender, EventArgs e)

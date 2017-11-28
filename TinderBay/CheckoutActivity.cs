@@ -11,6 +11,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+using App1.Resources;
 using Com.Paypal.Android.Sdk.Payments;
 using Java.Math;
 
@@ -33,12 +34,13 @@ namespace TinderBay
         protected Button btnToAccount;
         protected Button btnToHome;
         protected Button btnBuy;
-
+        int Index;
+      
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
-
+            Index = Intent.GetIntExtra("ProductID", 0);
             // Set out view from the layout resource
             SetContentView(Resource.Layout.CheckoutLayout);
 
@@ -57,11 +59,15 @@ namespace TinderBay
             var intent = new Intent(this, typeof(PayPalService));
             intent.PutExtra(PayPalService.ExtraPaypalConfiguration, config);
             this.StartService(intent);
+
+
         }
           
         public void btnBuy_Click(object sender, EventArgs e)
         {
-            var payment = new PayPalPayment(new BigDecimal("2.45"), "AUD", "the item",
+            string price = APIClass.ProductArray[Index].Price.ToString("F");
+            string name = APIClass.ProductArray[Index].Name;
+            var payment = new PayPalPayment(new BigDecimal(price), "AUD", name,
                 PayPalPayment.PaymentIntentSale);
 
             var intent = new Intent(this, typeof(PaymentActivity));

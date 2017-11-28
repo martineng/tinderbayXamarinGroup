@@ -51,14 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/relativeLayout1"
-        android:id="@+id/linearLayout1">
-        <TextView
-            android:text="PRICE"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/priceView"
-            android:textColor="#000" />
-    </LinearLayout>
+        android:id="@+id/linearLayout1" />
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
@@ -67,8 +60,20 @@
         android:layout_height="500px"
         android:id="@+id/linearLayout2"
         android:layout_below="@id/linearLayout1">
+        <TextView
+            android:text="Product Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productNameView"
+            android:textColor="#000" />
+        <TextView
+            android:text="PRICE"
+            android:id="@+id/priceView"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <Button
-            android:text="Button Buy Temp."
+            android:text="Buy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnBuy"

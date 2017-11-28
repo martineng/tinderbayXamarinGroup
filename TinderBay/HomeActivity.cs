@@ -11,16 +11,24 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Gestures;
+using App1.Resources;
 
-/* Coded by: Jack */
+/* Coded by: Jack feat The Blues Brothers */
 
 namespace TinderBay
 {
     [Activity(Label = "HomeActivity")]
     public class HomeActivity : Activity, GestureDetector.IOnGestureListener
     {
+        //Index for looping through items (Ben. G)
+        int ProductIndex = 0;
+        //Tag for searching (Ben.G)
+        string selectedTag;
+        bool matchesTag;
+
         private GestureDetector _gesture;
         private TextView _textView;
+        private TextView _productNameView;
         private ImageView _imageView;
         protected Button btnToAccount;
         protected Button btnToHome;
@@ -34,8 +42,9 @@ namespace TinderBay
             SetContentView(Resource.Layout.HomeLayout); // shows main axml on phone
 
             _textView = FindViewById<TextView>(Resource.Id.priceView);
-            _textView.Text = String.Format("${0}", 200);
+            _productNameView = FindViewById<TextView>(Resource.Id.productNameView);
             _gesture = new GestureDetector(this);
+
 
             btnToHome = FindViewById<Button>(Resource.Id.btnToHome);
             btnToAccount = FindViewById<Button>(Resource.Id.btnToAccount);
@@ -46,6 +55,13 @@ namespace TinderBay
             btnToHome.Click += BtnToHome_Click;
             btnToSearch.Click += BtnToSearch_Click;
             btnToBuy.Click += BtnToBuy_Click;
+
+            //Get tag from search screen
+            selectedTag = Intent.GetStringExtra("Tag") ?? "None";
+
+            //Populate text views
+            CheckTag();
+
         }
 
         /// <summary>
@@ -79,19 +95,17 @@ namespace TinderBay
         {
             _textView.Text = String.Format(String.Format("${0}", 400)); // displays the price of the item
 
+            matchesTag = false;
             if (velocityX > 90)
             {
                 Toast.MakeText(this, "item declined", ToastLength.Short).Show();
-                _imageView = FindViewById<ImageView>(Resource.Id.imageView1);
-                _imageView.SetImageResource(Resource.Drawable.car);
+                CheckTag();
             }
 
             if (velocityX < -90)
             {
                 Toast.MakeText(this, "item accepted", ToastLength.Short).Show();
-                // make it slide through test images
-                _imageView = FindViewById<ImageView>(Resource.Id.imageView1);
-                _imageView.SetImageResource(Resource.Drawable.bike);
+                CheckTag();
             }
 
             return true;
@@ -135,8 +149,45 @@ namespace TinderBay
 
         public void BtnToBuy_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(CheckoutActivity));
+            var checkoutActivity = new Intent (this, typeof(CheckoutActivity));
+            checkoutActivity.PutExtra("ProductID", ProductIndex);
+            StartActivity(checkoutActivity);
         }
 
+        //Changes the layout to info for the current selected(Ben.G)
+        public void UpdateToProduct()
+        {
+            _productNameView.Text = APIClass.ProductArray[ProductIndex].Name;
+            _textView.Text = String.Format("${0}",APIClass.ProductArray[ProductIndex].Price.ToString("F"));
+            //string imageString = APIClass.ProductArray[ProductIndex].Image_int.ToString();
+            //_imageView.SetImageResource(Resources.GetIdentifier("one.jpg", "drawable", PackageName));
+            //int ImageArrayIndex = APIClass.ProductArray[].Image_int
+        }
+
+        //Checks if the item matches the tag (Ben.G)
+        public void CheckTag()
+        {
+            matchesTag = false;
+            //Select next item in array, loop back to 0 if it runs out of items (Ben.G)
+            while (matchesTag == false)
+            {
+                ProductIndex++;
+                if (ProductIndex >= APIClass.ProductArray.Length)
+                {
+                    ProductIndex = 0;
+                }
+
+                if (selectedTag == "None")
+                {
+                    UpdateToProduct();
+                    matchesTag = true;
+                }
+                else if (selectedTag == APIClass.ProductArray[ProductIndex].Tag)
+                {
+                    UpdateToProduct();
+                    matchesTag = true;
+                }
+            }
+        }
     }
 }

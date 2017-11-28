@@ -11,8 +11,6 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-/* Coded by: Callum */
-
 namespace TinderBay
 {
     [Activity(Label = "HistoryActivity")]
@@ -27,7 +25,13 @@ namespace TinderBay
 
             //set page and title bar
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
-            SetContentView(Resource.Layout.HistoryLayout);        
+            SetContentView(Resource.Layout.HistoryLayout);
+
+            //Connect to DB
+
+            //retrieve item sell status
+            //retireve item sell date if sold
+            // two entries for time being          
 
             Button button1 = FindViewById<Button>(Resource.Id.button4);
             button1.Click += delegate

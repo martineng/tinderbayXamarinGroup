@@ -2,10 +2,10 @@
 <resources>
 	<string name="app_name">TinderBay</string>
 	<string-array name="tagArray">
-      <item>Select a tag</item>
-      <item>Car</item>
-      <item>Furniture</item>
-      <item>Clothes</item>
-      <item>Other</item>
+      <item>None</item>
+      <item>Book</item>
+      <item>Travel</item>
+      <item>Plants</item>
+      <item>Consumable</item>
     </string-array>
 </resources>

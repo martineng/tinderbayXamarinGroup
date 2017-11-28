@@ -5,12 +5,14 @@ using Android.OS;
 using System;
 using System.IO;
 using SQLite;
+using App1.Resources;
 
 /* Coded by: Martin ENG
  * E-mail: me@martineng.info */
 
 namespace TinderBay
 {
+    
     [Activity(Label = "TinderBay", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : Activity
     {
@@ -36,23 +38,26 @@ namespace TinderBay
             btnSignup.Click += BtnSignup_Click;
         }
 
-        protected void BtnLogin_Click(object sender, EventArgs e)
+        protected async void BtnLogin_Click(object sender, EventArgs e)
         {
             try
             {
+                //Get products and sales array (Ben. G)
+                await APIClass.GetProductsAsync();
+                await APIClass.GetSalesAsync();
                 // Calling Database
                 string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db");
 
-                var db = new SQLiteConnection(dpPath);
-                var dataTable = db.Table<LoginTable>();
-                var dataNode = dataTable.Where(x => x.username == etxtUsername.Text).FirstOrDefault(); // Linq Query
+                //var db = new SQLiteConnection(dpPath);
+                //var dataTable = db.Table<LoginTable>();
+                //var dataNode = dataTable.Where(x => x.username == etxtUsername.Text).FirstOrDefault(); // Linq Query
 
-                /*
+                
                 if (etxtUsername.Text=="martin" && etxtPassword.Text=="martin")
                 {
                     StartActivity(typeof(ProfileActivity));
-                }*/
-
+                }
+                /*
                 // Check if input matched
                 if (dataNode != null && BCrypt.Net.BCrypt.Verify(etxtPassword.Text, dataNode.passwordHash))
                 {
@@ -62,7 +67,7 @@ namespace TinderBay
                 else
                 {
                     Toast.MakeText(this, "Username or Password invalid", ToastLength.Short).Show();
-                }
+                }*/
             }
             catch (Exception exception)
             {
