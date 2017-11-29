@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">TinderBay</string>
+	<string-array name="tagArray">
+      <item>None</item>
+      <item>Book</item>
+      <item>Travel</item>
+      <item>Plants</item>
+      <item>Consumable</item>
+    </string-array>
+</resources>

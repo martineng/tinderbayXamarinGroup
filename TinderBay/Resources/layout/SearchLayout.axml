@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <ActionMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionMenuView">
+        <Button
+            android:text="Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnToHome"
+            android:background="#0089FB"
+            android:typeface="monospace" />
+        <Button
+            android:text="Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnToAccount"
+            android:background="#0089FB"
+            android:typeface="monospace" />
+    </ActionMenuView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchEditText"
+        android:hint="Search"
+        android:textColor="#000" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TagSelectSpinner"
+        android:background="#0089FB"
+        android:textColor="#000" />
+    <TextView
+        android:text="None"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TagText"
+        android:textColor="#000" />
+    <Button
+        android:text="Return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/returnBtn"
+        android:background="#0089FB" />
+</LinearLayout>
