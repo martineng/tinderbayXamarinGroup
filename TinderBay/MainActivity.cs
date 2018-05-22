@@ -6,6 +6,10 @@ using System;
 using System.IO;
 using SQLite;
 using App1.Resources;
+<<<<<<< HEAD
+=======
+using System.Collections.Generic;
+>>>>>>> final
 
 /* Coded by: Martin ENG
  * E-mail: me@martineng.info */
@@ -45,6 +49,11 @@ namespace TinderBay
                 //Get products and sales array (Ben. G)
                 await APIClass.GetProductsAsync();
                 await APIClass.GetSalesAsync();
+<<<<<<< HEAD
+=======
+
+                APIClass.SelectedTagsList = new List<string>();
+>>>>>>> final
                 // Calling Database
                 string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "user.db");
 

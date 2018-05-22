@@ -20,8 +20,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnToSearch"
+<<<<<<< HEAD
             android:text="Search"
             android:background="#0089FB" />
+=======
+            android:text="Search" />
+>>>>>>> final
         <Button
             android:text="Account"
             android:layout_width="match_parent"
@@ -73,10 +77,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
+<<<<<<< HEAD
             android:text="Buy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnBuy"
             android:background="#0089FB" />
+=======
+            android:text="Button Buy Temp."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBuy" />
+>>>>>>> final
     </LinearLayout>
 </RelativeLayout>

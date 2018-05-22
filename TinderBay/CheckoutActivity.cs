@@ -34,12 +34,21 @@ namespace TinderBay
         protected Button btnToAccount;
         protected Button btnToHome;
         protected Button btnBuy;
+<<<<<<< HEAD
         int Index;
       
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
+=======
+        int Index;
+
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            Window.RequestFeature(Android.Views.WindowFeatures.NoTitle); Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
+>>>>>>> final
             Index = Intent.GetIntExtra("ProductID", 0);
             // Set out view from the layout resource
             SetContentView(Resource.Layout.CheckoutLayout);
@@ -62,11 +71,19 @@ namespace TinderBay
 
 
         }
+<<<<<<< HEAD
           
         public void btnBuy_Click(object sender, EventArgs e)
         {
             string price = APIClass.ProductArray[Index].Price.ToString("F");
             string name = APIClass.ProductArray[Index].Name;
+=======
+
+        public void btnBuy_Click(object sender, EventArgs e)
+        {
+            string price = APIClass.ProductArray[Index-1].Price.ToString("F");
+            string name = APIClass.ProductArray[Index-1].Name;
+>>>>>>> final
             var payment = new PayPalPayment(new BigDecimal(price), "AUD", name,
                 PayPalPayment.PaymentIntentSale);
 
@@ -113,4 +130,8 @@ namespace TinderBay
             StartActivity(typeof(HomeActivity));
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> final

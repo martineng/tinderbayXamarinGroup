@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 namespace App1.Resources
+<<<<<<< HEAD
 {
     class APIClass
     {
@@ -24,6 +25,20 @@ namespace App1.Resources
         {
 
             //Instantiating HTTPClient
+=======
+{
+    class APIClass
+    {
+
+        public static Products[] ProductArray { get; set; }
+        //public static Users[] UserArray { get; set; }
+        public static Sales[] SaleArray { get; set; }
+        public static List<string> SelectedTagsList { get; set; }
+        public static async Task<List<Products>> GetProductsAsync()
+        {
+
+            //Instantiating HTTPClient
+>>>>>>> final
             HttpClient client = new HttpClient();
             //String address (URL)
             var address = "http://profferapi20171114093444.azurewebsites.net/api/ProductsModels";
@@ -56,7 +71,11 @@ namespace App1.Resources
         public string Description { get; set; }
         public string Tag { get; set; }
         public DateTime Upload_date { get; set; }
+<<<<<<< HEAD
         public int Image_int { get; set; }
+=======
+        public string ImageName { get; set; }
+>>>>>>> final
         public string User_id { get; set; }
     }
     class Sales

@@ -10,6 +10,10 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+<<<<<<< HEAD
+=======
+using App1.Resources;
+>>>>>>> final
 
 /* Coded by: Ben Griffin */
 
@@ -27,7 +31,11 @@ namespace TinderBay
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+<<<<<<< HEAD
             Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
+=======
+            Window.RequestFeature(WindowFeatures.NoTitle);
+>>>>>>> final
             SetContentView(Resource.Layout.SearchLayout);
 
             btnToHome = FindViewById<Button>(Resource.Id.btnToHome);
@@ -35,11 +43,19 @@ namespace TinderBay
 
             SelectedTagsList = new List<string>();
 
+<<<<<<< HEAD
             //Set up text view (Removed for Demo)
             //TextView TagText = FindViewById<TextView>(Resource.Id.TagText);
 
             //Set up search bar (Removed for Demo)
             //EditText searchEditText = FindViewById<EditText>(Resource.Id.searchEditText);
+=======
+            //Set up text view
+            TextView TagText = FindViewById<TextView>(Resource.Id.TagText);
+
+            //Set up search bar
+            EditText searchEditText = FindViewById<EditText>(Resource.Id.searchEditText);
+>>>>>>> final
 
             //Set up spinner
             Spinner TagSelectSpinner = FindViewById<Spinner>(Resource.Id.TagSelectSpinner);
@@ -55,8 +71,16 @@ namespace TinderBay
             Button returnBtn = FindViewById<Button>(Resource.Id.returnBtn);
             returnBtn.Click += delegate
             {
+<<<<<<< HEAD
                 var homeActivity = new Intent(this, typeof(HomeActivity));
                 homeActivity.PutExtra("Tag", selectedTag);
+=======
+                //Pass the tags to the APIClass
+                APIClass.SelectedTagsList = SelectedTagsList;
+                //Pass searched word using intent
+                var homeActivity = new Intent(this, typeof(HomeActivity));
+                homeActivity.PutExtra("Search", searchEditText.Text);
+>>>>>>> final
                 StartActivity(homeActivity);
             };
         }
@@ -66,13 +90,20 @@ namespace TinderBay
             
             //Set up spinner and text view
             Spinner spinner = (Spinner)sender;
+<<<<<<< HEAD
             //TextView TagText = FindViewById<TextView>(Resource.Id.TagText); (Removed for Demo)
+=======
+            TextView TagText = FindViewById<TextView>(Resource.Id.TagText);
+>>>>>>> final
 
 
             //Read selected item from spinner
             selectedTag = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
 
+<<<<<<< HEAD
             /* (Removed for Demo)
+=======
+>>>>>>> final
             //Check if the selected tag is already in the list
             bool tagAlreadySelected = false;
             foreach (string tag in SelectedTagsList)
@@ -95,7 +126,11 @@ namespace TinderBay
             }
 
             //Remove default tag
+<<<<<<< HEAD
             SelectedTagsList.Remove("Select a tag");
+=======
+            SelectedTagsList.Remove("None");
+>>>>>>> final
 
             //Display selected tags
             string tempString = "";
@@ -103,7 +138,11 @@ namespace TinderBay
             {
                 tempString = tempString + " " + tag;
             }
+<<<<<<< HEAD
             TagText.Text = tempString;*/
+=======
+            TagText.Text = tempString;
+>>>>>>> final
         }
 
         public void BtnToAccount_Click(object sender, EventArgs e)

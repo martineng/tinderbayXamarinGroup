@@ -23,6 +23,7 @@
             android:background="#0089FB"
             android:typeface="monospace" />
     </ActionMenuView>
+<<<<<<< HEAD
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -30,6 +31,26 @@
         android:background="#0089FB"
         android:textColor="#fff"
         android:popupBackground="#0089FB" />
+=======
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchEditText"
+        android:hint="Search"
+        android:textColor="#000" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TagSelectSpinner"
+        android:background="#0089FB"
+        android:textColor="#000" />
+    <TextView
+        android:text="None"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TagText"
+        android:textColor="#000" />
+>>>>>>> final
     <Button
         android:text="Return"
         android:layout_width="match_parent"
